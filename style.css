@@ -1,1 +1,43 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
 
+.todo-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:blue;
+    /* text-align:center; */
+    margin-bottom: 40px;
+}
+
+input
+{
+    padding: 5px 10px;
+}
+
+button {
+    /* background-color: #4CAF50; */
+    border: none;
+    /* color: white; */
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  form
+  {
+    padding-bottom: 30px;
+  }
+
+  ul
+  {
+    list-style-type: none;
+  }

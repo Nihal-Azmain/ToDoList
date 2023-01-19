@@ -8,14 +8,30 @@
     <title>ToDoList</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th><h1>To-Do APP</h1></th>
-        </tr>
-    </table>
-    <form>
-        <input type="text" name="ToDo" id="inputBox">
-    </form>
+    <div class="todo-wrapper">
+        <!-- HEADER -->
+        <h1>To-Do APP</h1>
+    
+        <!-- INPUT FORM -->
+        <form id="inputForm">
+            <input type="text" name="ToDo" id="inputBox">
+            <button id="add">ADD</button>
+        </form>
+        
+        <ul id="list">
+
+        </ul>
+
+        <div>
+            <button>All</button>
+            <button>Remaining Tasks</button>
+            <button>Completed</button>
+            <button></button>
+        </div>
+        
+    </div>
+
+
 
 </body>
 <script src="ToDoApp.js"></script>
