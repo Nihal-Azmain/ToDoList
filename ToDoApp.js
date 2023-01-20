@@ -18,6 +18,7 @@ function addToList(text)
 
     let checkBox=document.createElement('input');
     checkBox.type="checkbox";
+    checkBox.style.display='none';
     
     let span=document.createElement('span');
     span.className="close";
@@ -31,8 +32,8 @@ function addToList(text)
     newItem.appendChild(span);
 
     document.getElementById('list').appendChild(newItem);
-    checkItem(newItem);
     removeItem(newItem);
+    itemClick(newItem);
 }
 
 // *** REMOVE THE ITEM AFTER PRESSING THE "X" BUTTON ***
@@ -76,12 +77,14 @@ function allItemUnchecked()
     return true;
 }
 
-// *** MARKING/UNMARKING THE CHECKED ITEMS ***
+// *** MARKING/UNMARKING THE CHECKED ITEMS BY CLICKING THE LIST ***
 
-function checkItem(item)
+function itemClick(item)
 {
     let check=item.firstElementChild;
-    check.addEventListener('click',function(){
+    item.addEventListener('click',function(){
+        if(check.checked)check.checked=false;
+        else check.checked=true;
         backgroundcolor(item);
     });
 }
