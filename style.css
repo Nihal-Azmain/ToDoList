@@ -31,26 +31,27 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
-  form
-  {
+}
+form
+{
     padding-bottom: 30px;
-  }
+}
 
  
-  * {
+* {
     box-sizing: border-box;
-  }
+}
   
-  /* Style the list (remove margins and bullets, etc) */
-  ul {
+/* Style the list (remove margins and bullets, etc) */
+ul {
     list-style-type: none;
     padding: 0;
+    padding-bottom: 10px;
     margin: 0;
-  }
-  
-  /* Style the list items */
-  ul li {
+}
+
+/* Style the list items */
+ul li {
     border: 1px solid #ddd;
     margin-top: -1px; /* Prevent double borders */
     background-color: #f6f6f6;
@@ -60,25 +61,26 @@ button {
     color: black;
     display: block;
     position: relative;
-    width: 500px;
-  }
-  
-  /* Add a light grey background color on hover */
-  ul li:hover {
+    width: 650px;
+}
+
+/* Add a light grey background color on hover */
+ul li:hover {
     background-color: #eee;
-  }
-  
-  /* Style the close button (span) */
-  .close {
+}
+
+/* Style the close button (span) */
+.close {
     cursor: pointer;
     position: absolute;
     top: 50%;
     right: 0%;
     padding: 12px 16px;
     transform: translate(0%, -50%);
-  }
-  
-  .close:hover {background: #bbb;}
+}
 
+.close:hover {background: #bbb;}
 
-  
+#clearCompleted {
+    display: none;
+}
