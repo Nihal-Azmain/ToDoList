@@ -85,11 +85,6 @@ function itemClick(item)
     item.addEventListener('click',function(){
         if(check.checked)check.checked=false;
         else check.checked=true;
-        backgroundcolor(item);
-    });
-}
-
-// *** SHOW "CLEAR COMPLETED TASK" BUTTON ***
 
 function showClearCompletedTaskButton()
 {
@@ -187,3 +182,25 @@ clearCompletedButton.addEventListener('click',function(){
         if(key.firstElementChild.checked)key.parentElement.removeChild(key);
     }
 });
+
+
+
+
+// *******************
+// *** EXPERIMENTS ***
+// *******************
+
+// *** ADD ITEM TO THE LIST AFTER PRESSING THE "ENTER" KEY ****
+
+// let add=document.getElementById('inputBox');
+
+// add.addEventListener('keypress',function(event){
+//     event.preventDefault();
+//     if(event.code=='enter')
+//     {
+//         let text=document.getElementById('inputBox').value;
+    
+//         if( text !== "" )addToList(text);
+//         document.getElementById('inputBox').value="";
+//     }
+// });
